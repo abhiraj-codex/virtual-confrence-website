@@ -94,3 +94,136 @@ header{
     border-radius: .8rem;
     margin-left: .8rem;
 }
+
+.navbar ul .nav-btn.a{
+    display: none;
+}
+
+.ham-btn i.bx{
+    color: var(--text-color-2);
+    font-size: 4rem;
+}
+
+.ham-btn{
+    display: none;
+}
+
+.logo{
+    z-index: 999;
+}
+
+.ham-btn{
+    z-index: 999;
+}
+
+
+/* media query */
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 52.5%;
+    }
+
+    .nav-btn{
+    margin-right: 5rem;
+
+}
+
+
+    .logo{
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 42.5%;
+    }
+
+    .ham-btn{
+        display: block;
+        margin-right: 4rem;
+    }
+
+    .ham-btn i.bx.bx-x{
+        display: none;
+    }
+    .main-header{
+        position: relative;
+    }
+.navbar{
+position: absolute;
+top: 9.5vh;
+right: 100%;
+
+transition: right .3s ease;
+}
+
+
+.nav-btn{
+    display: none;
+}
+
+.nav-btn.a{
+    display: unset;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    
+   
+
+    & li a{
+        color: var(--bg-color);
+        font-size: 3rem;
+    }
+
+    & li{
+        list-style: none;
+    }
+}
+
+.navbar ul .nav-btn.a {
+     width: inherit;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     margin-top: 20px;
+    margin-right:0 ;
+    gap: 2rem;
+    
+}
+
+.nav-btn.a button:nth-child(1){
+    border-radius: .8rem;
+}
+   
+
+.ham-btn i.bx.bx-menu-right.active{
+    display: none;
+}
+
+.ham-btn i.bx.bx-x.active{
+    display: block;
+}
+
+.navbar.active{
+    right: 0;
+}
+}
+
+@media screen and (max-width:425px){
+    .logo{
+        margin-left: 2.5rem;
+    }
+
+    .ham-btn{
+        margin-right: 2.5rem;
+    }
+}

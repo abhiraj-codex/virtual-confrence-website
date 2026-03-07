@@ -1,37 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>virtual-confrence-website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/images/favv.png">
-</head>
-<body>
+    <!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/favv.png" />
+    
+  </head>
+  <body>
     <header>
-        <div class="main-header">
-        <a href="index.html" class="logo"><img src="/images/logo.png" alt="logo">Abhiweb.</a>
-       
-
+      <div class="main-header">
+        <a href="index.html" class="logo"
+          ><img src="/images/logo.png" alt="logo" />Abhiweb.</a
+        >
 
         <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing </a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing </a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+
+            <div class="nav-btn a">
+              <button>Log In</button>
+              <button>Sign Up</button>
+            </div>
+          </ul>
         </nav>
 
         <div class="nav-btn">
-            <button>Log In</button>
-            <button>Sign Up</button>
+          <button>Log In</button>
+          <button>Sign Up</button>
         </div>
-         </div>
+
+        <div class="ham-btn">
+        <i class="bx bx-menu-right" onclick="just()"></i>
+        <i class="bx bx-x" onclick="just()"></i>
+      </div>
+      </div>
+
+
+      
     </header>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
