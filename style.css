@@ -108,9 +108,9 @@ header{
     display: none;
 }
 
-.logo{
+/* .logo{
     z-index: 999;
-}
+} */
 
 .ham-btn{
     z-index: 999;
@@ -153,7 +153,7 @@ header{
     }
 .navbar{
 position: absolute;
-top:64px;
+top:0px;
 right: 100%;
 
 transition: right .3s ease;
@@ -211,6 +211,7 @@ transition: right .3s ease;
 
 .ham-btn i.bx.bx-x.active{
     display: block;
+    color: var(--bg-color);
 }
 
 .navbar.active{
