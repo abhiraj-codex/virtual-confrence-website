@@ -128,11 +128,12 @@ main{
 .main-hero{
     max-width: 1440px;
     height: 66.6rem;
-    margin: 0 auto;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 8rem;
+
+    margin:0 auto;
 }
 
 .hero-content{
@@ -140,6 +141,7 @@ main{
     /* height: 46rem; */
     /* border: solid var(--btn-color); */
     height: 46rem;
+        margin-left: 8rem;
 }
 
 .hero-content p:nth-child(1){
@@ -218,9 +220,30 @@ main{
 }
 /* media query */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1440px){
     html{
         font-size: 52.5%;
+    }
+
+    .hero-img img {
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+
+@media screen and (max-width:1240px){
+    .hero-content{
+        margin-left: 2rem;
+    }
+    .hero-img{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 42.5%;
     }
 
     .nav-btn{
@@ -232,7 +255,47 @@ main{
     .logo{
         margin-left: 5rem;
     }
+
+    .hero-content{
+          width: 45.6rem;
+    /* height: 46rem; */
+    /* border: solid var(--btn-color); */
+    /* height: 30rem; */
+        margin-left: 6rem;
+    }
+
+    .hero-img{
+        margin-right: 6rem;
+        margin-top: 0;
+    }
+
+     .hero-img img  {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .hero-content p:nth-child(1){
+        font-size:5rem ;
+    }
+
+     .hero-content p:nth-child(2){
+        font-size:1.5rem ;
+    }
+
+    .hero-btn button:nth-child(1){
+  width: 15.8rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    }
+
+    .hero-btn button:nth-child(2){
+  width: 17.8rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    }
 }
+
+
 
 @media screen and (max-width:768px) {
     html{
@@ -320,6 +383,50 @@ transition: right .3s ease;
 a.logo.active {
     color: var(--bg-color);
 }
+
+
+.main-hero{
+    flex-direction: column-reverse;
+    height: max-content;
+}
+
+.hero-img{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+
+}
+
+.hero-content{
+    text-align: center;
+    margin-left: 0;
+}
+
+.hero-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-btn button:nth-child(1){
+    width: 32.7rem;
+    height: 5.4rem;
+    margin: 0;
+}
+
+.hero-btn button:nth-child(2){
+    width: 32.7rem;
+    height: 5.4rem;
+    margin-top: 1.6rem;
+}
+
+.hero-content p:nth-child(1)::before{
+    top: 3%;
+    right: 3%;
+}
+
+
 }
 
 @media screen and (max-width:425px){
@@ -331,3 +438,13 @@ a.logo.active {
         margin-right: 2.5rem;
     }
 }
+
+
+@media screen and (max-width:375px){
+    .hero-img img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
