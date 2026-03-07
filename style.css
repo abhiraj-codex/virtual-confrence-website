@@ -31,6 +31,10 @@ a{
     color: var(--text-color-2);
 }
 
+p{
+    color: var(--text-color-2);
+}
+
 header{
     background-color: var(--bg-color);
     height: 9.4rem;
@@ -117,6 +121,101 @@ header{
 }
 
 
+main{
+    background-color: var(--bg-color);
+}
+
+.main-hero{
+    max-width: 1440px;
+    height: 66.6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.hero-content{
+    width: 63.6rem;
+    /* height: 46rem; */
+    /* border: solid var(--btn-color); */
+    height: 46rem;
+}
+
+.hero-content p:nth-child(1){
+    font-size: 7rem;
+    position: relative;
+    margin-bottom: 2.4rem;
+}
+
+.hero-content p:nth-child(1)::before{
+    content:'' ;
+    position: absolute;
+    background-image: url(/images/Ornament.svg);
+    width: 2rem;
+    height: 2rem;
+    top: 10%;
+    right: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    /* background: ; */
+
+}
+
+.hero-content p:nth-child(2){
+    font-size: 2rem;
+    margin-bottom: 5.6rem;
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.hero-content button:nth-child(1){
+    display: inline-block;
+    width: 19.8rem;
+    height: 6rem;
+    background-color: var(--btn-color);
+    border-radius: .8rem;
+    font-weight: 2rem;
+    border: none;
+    color: var(--text-color-2);
+    margin-right: 2.4rem;
+    font-size: 1.6rem;
+}
+
+.hero-content button:nth-child(2){
+    display: inline-block;
+    width: 19.6rem;
+    height: 6rem;
+    background-color: transparent;
+    border-radius: .8rem;
+    font-weight: 2rem;
+    border: solid var(--text-color) .1rem;
+    color: var(--text-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+
+    & i.bx{
+        font-size: 2rem;
+    }
+}
+
+.hero-img{
+    width: 52.2rem;
+    height: 52.2rem;
+    /* border: solid .1rem var(--btn-color); */
+    margin-right: 8rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* media query */
 
 @media screen and (max-width:1024px) {
