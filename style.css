@@ -39,6 +39,11 @@ p{
 header{
     background-color: var(--bg-color);
     height: 9.4rem;
+    
+    position: sticky;
+    top: 0;
+      z-index: 999;
+   
 }
 
 .main-header{
@@ -48,6 +53,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: inherit;
+    
 }
 
 .logo img{
@@ -70,6 +76,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 4rem;
+  
     
 }
 
@@ -124,6 +131,7 @@ header{
 
 main{
     background-color: var(--bg-color);
+        /* margin-top: 9.4rem; */
 }
 
 .main-hero{
@@ -245,6 +253,16 @@ section{
     width: 103px;
     /* height: 36px; */
 }
+
+
+/* From Gpt🥰🥰  */
+
+header.scrolled{
+    backdrop-filter: blur(10px);
+    background: rgba(15,16,23,0.85);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: all .3s ease;
+} /* ignore */
 /* media query */
 
 
