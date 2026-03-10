@@ -16,7 +16,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
+
+/* *{
+outline:1px solid red;
+} */ 
 
 html{
     scroll-behavior: smooth;
@@ -25,12 +30,11 @@ html{
 
 body{
     font-family: 'Poppins';
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    overflow-x:hidden;
 }
 
-section{
-    margin-bottom: 200px;
-}
+
 
 a{
     text-decoration: none;
@@ -314,7 +318,7 @@ main{
 }
 
 section{
-    
+    overflow: hidden;
     background-color: var(--bg-color-2);
 }
 
@@ -325,6 +329,7 @@ section{
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: 1fr;
+    overflow: hidden;
     
 }
 
@@ -332,11 +337,13 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .com img{
     width: 103px;
     /* height: 36px; */
+    overflow: hidden;
 }
 
 

@@ -6,7 +6,7 @@ const navHover =   document.querySelector('.js-log2');
 const jsLog = document.querySelector('.js-log');
 const jsLog3 =  document.querySelector('.js-log3');
 const jsLog4 =  document.querySelector('.js-log4');
-
+ AOS.init();
 function just(){
     hamMenu.classList.toggle('active');
     closeMEnu.classList.toggle('active');
@@ -47,4 +47,3 @@ window.addEventListener("scroll", function () {
         header.classList.remove("scrolled");
     }
 });   
- AOS.init();
