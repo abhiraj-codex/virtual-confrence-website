@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>virtual-confrence-website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Basic Icons -->
     <link
       href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
@@ -24,29 +25,29 @@
   </head>
   <body>
     <header>
-      <div class="main-header">
+      <div class="main-header" data-aos="fade-down" >
         <a href="index.html" class="logo"
           ><img src="/images/logo.png" alt="logo" />Abhiweb.</a
         >
 
         <nav class="navbar">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Pricing </a></li>
             <li><a href="#">Career</a></li>
             <li><a href="#">Blog</a></li>
 
             <div class="nav-btn a">
-              <button>Log In</button>
-              <button>Sign Up</button>
+              <button >Log In</button>
+              <button >Sign Up</button>
             </div>
           </ul>
         </nav>
 
         <div class="nav-btn">
-          <button>Log In</button>
-          <button>Sign Up</button>
+          <button class="js-log" onmouseenter="jsLog1()" onmouseleave="jsLog1()">Log In</button>
+          <button class="js-log2" onmouseenter="jsLog2()" onmouseleave="jsLog2()">Sign Up</button>
         </div>
 
         <div class="ham-btn">
@@ -58,7 +59,7 @@
 
     <main>
       <div class="main-hero">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-up-right">
           <div class="hero-para">
             <p>Reliable, secure conference to get the best events</p>
             <p>
@@ -68,29 +69,29 @@
           </div>
 
           <div class="hero-btn">
-            <button>Create Conference</button>
-            <button>Watch story <i class="bx bx-arrow-right"></i></button>
+            <button class="js-log3" onmouseenter="jsLog33()" onmouseleave="jsLog33()">Create Conference</button>
+            <button class="js-log4" onmouseenter="jsLog44()" onmouseleave="jsLog44()">Watch story <i class="bx bx-arrow-right"></i></button>
           </div>
         </div>
-        <div class="hero-img">
-          <img src="/images/Image (1).png" alt="">
+        <div class="hero-img"  data-aos="fade-down-left">
+          <img src="/images/Image (1).png" alt="Home images" />
         </div>
       </div>
     </main>
 
     <section>
-      <div class="main-com">
-        <div class="com"><img src="/images/1.png" alt=""></div>
-        <div class="com"><img src="/images/2.png" alt=""></div>
-        <div class="com"><img src="/images/3.png" alt=""></div>
-        <div class="com"><img src="/images/4.png" alt=""></div>
-        <div class="com"><img src="/images/5.png" alt=""></div>
-        <div class="com"><img src="/images/6.png" alt=""></div>
-        <div class="com"><img src="/images/7.png" alt=""></div>
-        <div class="com"><img src="/images/8.png" alt=""></div>
-          
+      <div class="main-com"  data-aos="zoom-in-up">
+        <div class="com"><img src="/images/1.png" alt="" /></div>
+        <div class="com"><img src="/images/2.png" alt="" /></div>
+        <div class="com"><img src="/images/3.png" alt="" /></div>
+        <div class="com"><img src="/images/4.png" alt="" /></div>
+        <div class="com"><img src="/images/5.png" alt="" /></div>
+        <div class="com"><img src="/images/6.png" alt="" /></div>
+        <div class="com"><img src="/images/7.png" alt="" /></div>
+        <div class="com"><img src="/images/8.png" alt="" /></div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
